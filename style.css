@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Uni */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+/* Colors */
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+/* Typography */
+body {
+  font-size: 14px;
+  font-weight: 400; /* Regular font weight */
+  min-height: 100vh;
+  background-color: var(--neutral-off-black);
+  padding-block: 1rem;
+  color: var(--neutral-white);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
+}
+
+/* Note: Adjust font weights as needed */
+button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 20px;
+  background-color: var(--neutral-grey);
+  color: var(--neutral-white);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--neutral-off-black);
+  }
+}
+button:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.container {
+  width: 360px;
+  padding: 28px;
+  padding-top: 32px;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  background-color: var(--neutral-dark-grey);
+  flex-direction: column;
+  align-items: center;
+}
+.info {
+  text-align: center;
+}
+.info h1 {
+  font-size: 19px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+.info h2 {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+img {
+  border-radius: 100%;
+  width: 80px;
+}
+
+/* Layout */
+
+@media screen and (min-width: 1440px) {
+  /* Desktop layout */
+}
